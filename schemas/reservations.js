@@ -25,7 +25,6 @@ let reservationSchema = mongoose.Schema({
     user: {
         type: mongoose.Types.ObjectId,
         ref: 'user',
-        unique: true,
         require: true
     },
     items: {
